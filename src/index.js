@@ -71,7 +71,7 @@ registerPlugin("test", () => {
 });
 
 function getComponent() {
-  if (cached) return cachedComp;
+  if (cached) return cached;
 
   let ast;
   if (!localStorage.getItem("comp")) {
